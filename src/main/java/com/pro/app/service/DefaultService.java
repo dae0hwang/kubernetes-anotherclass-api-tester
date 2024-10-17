@@ -90,7 +90,7 @@ public class DefaultService {
 
         if (yamlFile != null) {
             Map<String, Object> yamlMaps = y.load(yamlFile);
-
+            //seceret-filepath에 있는 파일의 키의 값을 datasourceProperties에 저장
             datasourceProperties.setDriverClassName(yamlMaps.get("driver-class-name").toString());
             datasourceProperties.setUrl(yamlMaps.get("url").toString());
             datasourceProperties.setUsername(yamlMaps.get("username").toString());

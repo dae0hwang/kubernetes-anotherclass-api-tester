@@ -4,6 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+//datasource 값 읽어서 driverClassName url username 변수에 매칭
 @ConfigurationProperties("datasource")
 public class DatasourceProperties {
 

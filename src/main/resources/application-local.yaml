@@ -5,10 +5,15 @@ datasource:
   password: "local"
 
 
+#volume-path:
+#  # for windows
+#  persistent-volume-data: "C:\\volume\\local\\pv\\"
+#  pod-volume-data: "C:\\volume\\local\\pod\\"
+
 volume-path:
-  # for windows
-  persistent-volume-data: "C:\\volume\\local\\pv\\"
-  pod-volume-data: "C:\\volume\\local\\pod\\"
+  persistent-volume-data: "/users/geung/IdeaProjects/volume/local/pv/"
+  pod-volume-data: "/users/geung/IdeaProjects/volume/local/pod/"
+#C:\Users\geung\IdeaProjects이거 아닌가??
 
   # for mac
 #  persistent-volume-data: "/users/<username>/IdeaProjects/volume/local/pv/"
